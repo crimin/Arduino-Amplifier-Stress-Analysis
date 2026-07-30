@@ -66,20 +66,23 @@ The Arduino boards were flashed with the example ReadAnalogVoltage code, and the
 #REMOVE OFFSET USING REAL BASELINE – Here the signal is base-lined, meaning the amplified voltage output before the cantilever beam is loaded is used as the zero-reference position.
 
 STRAIN FROM AMPLIFIED SIGNAL – The amplified Wheatstone bridge output voltage is now converted into strain. This is achieved by dividing the signal by the amplifier gain (604) for all beam measurements and then applying the following formula to calculate the measured strain (Equation 2-4). In all cases, the gauge factor (K) is 2, and it can be observed that the full Wheatstone bridge is four times as sensitive as the quarter bridge.
-Quater Bridge:
+
+**Quater Bridge:**
  E_out=(E_exc)/4δR/R=KE_exc/4ε Equation 2
-half Bridge:
+ 
+**half Bridge:**
  E_out=(E_exc)/2δR/R=KE_exc/2ε Equation 3
-Full Bridge:
+ 
+**Full Bridge:**
  E_out=E_excδR/R=εKE_exc Equation 4
 
 #BEAM GEOMETRY – The beam geometry of the two cantilever beams is saved in the script and it was assumed that the possion ratio (υ) is 0.3 and the Modulus (E) is 200GPa.
 
 #STRESS & MOMENT – The relationship between stress and strain is used to determine the surface stress, and simple bending theory is applied to determine the bending moment at the position where the strain gauge is situated (equation 5-6).
 
- ϭ=Eε Equation 5
+ϭ=Eε Equation 5
 
- M/I=ϭ/y=E/R Equation 6
+M/I=ϭ/y=E/R Equation 6
 
 #SMOOTH MOMENT FOR PLATEAU DETECTION – As the title suggests, a simple moving-average filter is used to remove signal noise.
 
