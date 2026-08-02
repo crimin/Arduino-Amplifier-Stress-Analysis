@@ -132,3 +132,5 @@ The results have shown that there is good correlation when placing magnet weight
 **Conclusion**
 
 The solution presented in Figure 1, which incorporates the INA125 instrumentation amplifier, has been validated using full-, half-, and quarter-bridge strain-gauge configurations bonded to a cantilever beam. The PCB’s measured output was compared against an analytical solution, confirming its accuracy. This work demonstrates that the building block developed here provides a repeatable, validated method suitable for both transducer applications and stress-analysis measurements.
+
+**Contact:** anthony.crimin@hotmail.co.uk
